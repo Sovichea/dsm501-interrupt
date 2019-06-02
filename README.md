@@ -28,9 +28,9 @@ A piece of code is included in the example to delay for 60 seconds to wait for t
 Serial.println("Wait 60s for DSM501 to warm up"); 
 for (int i = 1; i <= 60; i++)
 {
-	delay(1000); // 1s
-	Serial.print(i);
-	Serial.println(" s (wait 60s for DSM501 to warm up)");
+    delay(1000); // 1s
+    Serial.print(i);
+    Serial.println(" s (wait 60s for DSM501 to warm up)");
 }
 Serial.println("DSM501 is ready!");
 ```
@@ -48,5 +48,5 @@ if (dsm501.update())
 
 `getParticleCount(int i)` is written specifically to get the number of particle counts in *parts/283mL*​ or *parts/0.1cf*. Index **0** is the number of counts for any particle larger than PM1.0, Index **1** is the number of counts for any particle larger than PM2.5.
 
-`getConcentration()` uses the number of particle counts between PM1.0 and PM2.5, then estimates the concentration in  `ug/m^3`. The estimation is based on a Journal on Atmospheric Environment (<https://www.researchgate.net/publication/216680944_Estimation_of_particle_mass_concentration_in_ambient_air_using_a_particle_counter>). It is done by assuming that all particles are **spherical** with an average radius `r = 0.44um` and a density `D = 1.65x10^12 ug/m^3`. 
+`getConcentration()` uses the number of particle counts between PM1.0 and PM2.5, then estimates the concentration in  `ug/m^3`. The estimation is based on a Journal on Atmospheric Environment (<https://www.researchgate.net/publication/216680944_Estimation_of_particle_mass_concentration_in_ambient_air_using_a_particle_counter>). It is done by assuming that all particles are **spherical** with an average radius `r = 0.44um` and a density `D = 1.65x10^12ug/m^3`. 
 
