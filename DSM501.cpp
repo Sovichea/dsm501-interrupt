@@ -149,8 +149,8 @@ float DSM501::getConcentration()
 	* mass = density * volume;
 	*      = 5.8875E-07 ug
 	* 
-	* parts/m3 = parts/283mL * 3531.5
-	* ug/m3    = parts/m3 * 5.8875E-07
+	* parts/m3 = parts/283mL * 1E6/283
+	* ug/m3    = parts/m3 * mass
 	*          = parts/283mL * 0.002179
 	*/
 
