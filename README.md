@@ -46,7 +46,7 @@ if (dsm501.update())
 }
 ```
 
-`getParticleCount(int i)` is written specifically to get the number of particle counts in $parts/283mL$ or $parts/0.1cf$. Index **0** is the number of counts for any particle larger than PM1.0, Index **1** is the number of counts for any particle larger than PM2.5.
+`getParticleCount(int i)` is written specifically to get the number of particle counts in *parts/283mL*​ or *parts/0.1cf*. Index **0** is the number of counts for any particle larger than PM1.0, Index **1** is the number of counts for any particle larger than PM2.5.
 
-`getConcentration()` uses the number of particle counts between PM1.0 and PM2.5, then estimates the concentration in $\mu g/m^3$. The estimation is based on a Journal on Atmospheric Environment (<https://www.researchgate.net/publication/216680944_Estimation_of_particle_mass_concentration_in_ambient_air_using_a_particle_counter>). It is done by assuming that all particles are **spherical** with an average radius $r=0.44\mu m$  and a density $D=1.65\times10^{12}\mu g/m^3$. 
+`getConcentration()` uses the number of particle counts between PM1.0 and PM2.5, then estimates the concentration in $\mu g/m^3$. The estimation is based on a Journal on Atmospheric Environment (<https://www.researchgate.net/publication/216680944_Estimation_of_particle_mass_concentration_in_ambient_air_using_a_particle_counter>). It is done by assuming that all particles are **spherical** with an average radius <img src="http://latex.codecogs.com/svg.latex?r=0.44\mu m" border="0"/> and a density <img src="http://latex.codecogs.com/svg.latex?D=1.65\times10^{12}\mu g/m^3" border="0"/>.
 
