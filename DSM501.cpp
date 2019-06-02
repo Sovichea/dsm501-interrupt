@@ -40,7 +40,6 @@ static void pulseMeasure(int pm_index, int pulse_state)
   }
   else
   {
-    // check if timer is overflow, then skip the sample
     if (_state_prev[pm_index] == pulse_state)
     {
       _t_ellapse[pm_index] = (uint32_t)(micros() - _t_ellapse[pm_index]);
